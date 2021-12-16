@@ -1,0 +1,387 @@
+@import url("https://fonts.googleapis.com/css2?family=Poppins&display=swap");
+
+*,
+*::before,
+*::after {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: "Poppins", sans-serif;
+}
+
+html {
+  scroll-behavior: smooth;
+}
+
+p {
+  font-size: 0.8rem;
+  letter-spacing: normal;
+}
+
+header {
+  position: relative;
+  display: flex;
+  align-items: center;
+  padding: 1rem 8rem;
+  background-color: black;
+  color: white;
+  width: 100%;
+}
+
+header > * {
+  font-size: 0.8rem;
+}
+
+header > .btn {
+  margin-left: auto;
+  position: absolute;
+  top: 0;
+  right: 8rem;
+  height: 3.2rem;
+  padding-top: 12px;
+}
+
+/* <--home section--> */
+
+.home {
+  position: relative;
+  color: white;
+  background-image: linear-gradient(rgba(0, 0, 0, 0.6), rgba(0, 0, 0, 0.6)),
+    url(images/header-image.jpg);
+  background-position: center;
+  background-size: cover;
+  background-repeat: no-repeat;
+  height: 90vh;
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  align-content: 0;
+}
+
+nav {
+  position: absolute;
+  top: 0;
+  background-color: rgba(255, 255, 255, 0.7);
+  display: flex;
+  align-items: center;
+  width: 100%;
+  padding: 1.3rem 8rem;
+}
+
+nav a > img {
+  width: 75px;
+}
+
+.nav-items {
+  display: flex;
+  margin-left: auto;
+}
+
+.nav-item {
+  list-style-type: none;
+  margin-left: 1.5rem;
+  padding: 0.3rem 0.5rem;
+}
+
+.nav-item a {
+  text-decoration: none;
+  color: black;
+  font-size: 0.8rem;
+}
+
+.nav-item:hover {
+  border-bottom: 1px solid black;
+  transition: all ease-in-out 180ms;
+}
+
+.nav-item:hover a {
+  color: red;
+}
+
+.CTA {
+  display: flex;
+}
+
+.btn {
+  background-color: red;
+  padding: 0.3rem 0.5rem;
+  font-size: 0.9rem;
+  color: white;
+  cursor: pointer;
+  transition: all ease-in-out 200ms;
+}
+
+.btn + .btn {
+  margin-left: 15px;
+}
+
+.btn:hover {
+  background-color: rgba(255, 0, 0, 0.9);
+  transform: scale(1.05);
+}
+
+/* <--main section--> */
+
+h3 {
+  text-align: center;
+  padding: 1rem 0;
+  letter-spacing: 1.12px;
+  word-spacing: 1.5px;
+}
+
+/* <-- why invest in multifamily real estate->  */
+
+.description--body {
+  display: flex;
+}
+
+.description--text,
+.description--image {
+  width: 50%;
+  height: 70vh;
+}
+
+.description--text {
+  display: grid;
+  place-items: center;
+  padding: 6rem;
+  background-color: rgb(177, 170, 170);
+}
+
+.description--text > h3,
+p {
+  text-align: center;
+  letter-spacing: 1.5px;
+  word-spacing: normal;
+}
+
+.description--image {
+  background-image: url(images/business.jpg);
+  background-size: cover;
+  background-position: center;
+}
+
+/* <--why choose multifamily investments--> */
+
+.benefits {
+  padding: 2rem 6.5rem 0;
+  text-align: center;
+}
+
+.benefits h3 {
+  letter-spacing: 1.015px;
+  word-spacing: 1px;
+}
+
+.benefit--container {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  grid-auto-rows: 200px;
+  gap: 2rem 1rem;
+  padding: 0.8rem;
+}
+
+.benefit-card {
+  display: grid;
+  place-items: center;
+  align-content: center;
+  cursor: pointer;
+}
+
+.icon {
+  display: grid;
+  place-items: center;
+  height: 50px;
+  width: 50px;
+  background-color: lightgray;
+  border-radius: 50%;
+}
+
+.icon > img {
+  height: 30px;
+}
+
+.portfolio {
+  background-color: rgb(177, 170, 170);
+  padding: 1rem 8rem;
+  display: flex;
+  flex-direction: column;
+}
+
+.portfolio-container {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+  gap: 1rem;
+}
+
+.portfolio--card {
+  /* display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center; */
+  box-shadow: 0 2px 5px 0 rgba(0, 0, 0, 0.4);
+  cursor: pointer;
+  overflow: hidden;
+}
+
+.card--image {
+  overflow: hidden;
+}
+
+.card--image > img {
+  width: 100%;
+  display: block;
+  max-height: 200px;
+  object-fit: cover;
+  object-position: center;
+}
+
+.card--body {
+  background-color: white;
+  padding: 1rem 0;
+  width: 100%;
+  text-align: center;
+}
+
+.portfolio--card:hover .card--image {
+  transform: scale(1.015);
+  transition: all ease-in 200ms;
+}
+
+.btn.btn-primary {
+  border: 1px solid black;
+  background-color: transparent;
+  color: black;
+  margin: 2rem 0;
+  justify-self: center;
+  align-self: center;
+}
+
+.section-one {
+  padding: 1rem 8rem;
+}
+
+.section-one p {
+  letter-spacing: normal;
+  text-align: start;
+  margin-top: 1rem;
+}
+
+.section-content {
+  display: flex;
+  /* background-color: lightgreen; */
+  gap: 2rem;
+  margin: 2rem 0;
+  border-bottom: 1px solid lightgrey;
+  padding-bottom: 1.2em;
+}
+
+.section-content > div {
+  width: 30%;
+  height: 250px;
+}
+
+.some-image {
+  height: 100px;
+  width: 100px;
+  background-color: lightgrey;
+}
+
+.partners {
+  padding: 1.2rem 8rem;
+  background-color: rgb(177, 170, 170);
+}
+
+.partner-container {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+  gap: 1rem;
+}
+
+.partner-card {
+  text-align: center;
+}
+
+.partner-card p {
+  letter-spacing: normal;
+}
+
+.partner--body {
+  margin: 0.5rem;
+}
+
+.partner--image > img {
+  width: 100%;
+  height: 320px;
+  max-height: 320px;
+  object-fit: cover;
+  object-position: center;
+  aspect-ratio: 16/9;
+}
+
+.testimonials {
+  padding: 1rem 8rem;
+  color: white;
+  background-image: linear-gradient(
+      rgba(13, 0, 101, 0.5),
+      rgba(13, 0, 101, 0.5)
+    ),
+    url(images/testimonial-bg.jpg);
+  background-position: center;
+  background-size: cover;
+  text-align: center;
+}
+
+.testimonial-container {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+  gap: 1.5rem;
+}
+
+.testimonial {
+  width: 280px;
+  height: 300px;
+  max-height: 300px;
+  padding-top: 1rem;
+}
+
+.testimonial p {
+  letter-spacing: normal;
+  margin: 1rem 0;
+}
+
+footer {
+  color: white;
+  background-color: rgb(62, 61, 61);
+  padding: 1rem 8rem;
+  display: flex;
+  justify-content: space-between;
+}
+
+footer p {
+  text-align: start;
+  letter-spacing: normal;
+}
+
+.about {
+  width: 320px;
+}
+
+.social-media {
+  background-color: white;
+  padding: 5px;
+  display: inline-flex;
+  align-items: center;
+  border-radius: 0.2em;
+  padding-bottom: 2px;
+}
+
+.social-media {
+  margin-right: 5px;
+}
+
+.social-media:hover {
+  background-color: rgba(255, 255, 255, 0.8);
+}
